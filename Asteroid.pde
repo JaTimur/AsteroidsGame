@@ -3,20 +3,21 @@ class Asteroid extends Floater{
   public Asteroid(){
     rotSpeed=(Math.random()*11)-5;
     myColor=(255);
-    myCenterX=myCenterY=250;
-    myXspeed=myYspeed=0;
-    myPointDirection=0;
+    myCenterX=(Math.random()*501);
+    myCenterY=(Math.random()*501);
+    myXspeed=myYspeed=(Math.random()*3);
+    myPointDirection=(Math.random()*360);
     corners=4;
     xCorners=new int[corners];
     yCorners=new int[corners];
-    xCorners[0]=-6+(int)(Math.random()*11)-4;
-    yCorners[0]=-6+(int)(Math.random()*11)-4;
-    xCorners[1]=-6+(int)(Math.random()*11)-4;
-    yCorners[1]=6+(int)(Math.random()*11)-4;
-    xCorners[2]=6+(int)(Math.random()*11)-4;
-    yCorners[2]=6+(int)(Math.random()*11)-4;
-    xCorners[3]=6+(int)(Math.random()*11)-4;
-    yCorners[3]=-6+(int)(Math.random()*11)-4;
+    xCorners[0]=-6+(int)(Math.random()*7)-4;
+    yCorners[0]=-6+(int)(Math.random()*7)-4;
+    xCorners[1]=-6+(int)(Math.random()*7)-4;
+    yCorners[1]=6+(int)(Math.random()*7)-4;
+    xCorners[2]=6+(int)(Math.random()*7)-4;
+    yCorners[2]=6+(int)(Math.random()*7)-4;
+    xCorners[3]=6+(int)(Math.random()*7)-4;
+    yCorners[3]=-6+(int)(Math.random()*7)-4;
   }
   public void move(){
     turn(rotSpeed);
