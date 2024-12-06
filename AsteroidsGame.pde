@@ -12,7 +12,10 @@ public void draw(){
   for(int n=0;n<asteroids.size();n++){
     asteroids.get(n).show();
     asteroids.get(n).move();
-    if(dist((float)asteroids.get(n).getCenterX(),(float)asteroids.get(n).getCenterY(),(float)player.getCenterX(),(float)player.getCenterY())<20){asteroids.remove(asteroids.get(n));}
+    if(dist((float)asteroids.get(n).getCenterX(),(float)asteroids.get(n).getCenterY(),(float)player.getCenterX(),(float)player.getCenterY())<20){
+      asteroids.remove(asteroids.get(n));
+      n--;
+    }
   }
   player.show();
   player.move();
