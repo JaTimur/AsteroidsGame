@@ -1,7 +1,7 @@
 Star[] bg=new Star[100];
 Spaceship player=new Spaceship();
-ArrayList<Asteroid>asteroids=new ArrayList<Asteroid>();
-ArrayList<Bullet>bullets=new ArrayList<Bullet>();
+ArrayList<Asteroid> asteroids=new ArrayList<Asteroid>();
+ArrayList<Bullet> bullets=new ArrayList<Bullet>();
 public void setup(){
   size(500,500);
   for(int n=0;n<bg.length;n++){bg[n]=new Star();}
